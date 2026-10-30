@@ -19,6 +19,8 @@ ipcMain.on("start", async () => {
     if (modal) modal.close();
     setModalWin(undefined);
 
+    sendNotification("Hey Tom", "Chat apps ready");
+
     let main = getMainWin();
     if (!main) {
         let win = await createWindow(400, 600);
