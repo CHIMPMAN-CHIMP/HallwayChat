@@ -1,0 +1,49 @@
+:root {
+    --MAIN-BACKGROUND: #222222;
+    --MAIN-FOREGROUND: #2e2e2e;
+
+    --CLOSE: rgb(232, 37, 37);
+
+    --BUTTON-BACKGROUND: #3a3a3a;
+    --BUTTON-HIGHLIGHT: #4e4e4e;
+    --BUTTON-SELECTED: var(--MAIN-FOREGROUND);
+}
+
+@font-face {
+    font-family: "CodecPro";
+    src: url("../fonts/CodecPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CodecPro";
+    src: url("../fonts/CodecPro-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PixelLatin";
+    src: url("../fonts/pixel-latin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PixelTimesNewRoman";
+    src: url("../fonts/PixelTimesNewRoman.ttf") format("truetype");
+}
+
+/* * { font-family: "PixelLatin";} */
+* { font-family: "PixelTimesNewRoman";}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+iframe {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}

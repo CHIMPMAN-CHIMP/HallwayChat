@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    grid-template-columns: 3% 1fr;
+    grid-template-rows: 100dvh;
+    gap: 2dvw;
+}
+
+div:has(#sidebar) {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: var(--MAIN-BACKGROUND);
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    border-right: 1px solid gray;
+    padding: 1dvh 1.5dvw 1dvh 1dvw;
+    anchor-name: --sidebar;
+}
+
+#sidebar {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: min-content;
+    grid-auto-columns: 1fr;
+    padding: 1dvh 1dvw;
+}
+
+#sidebar > button {
+    width: 100%;
+    position: relative;
+    left: -1.5dvw;
+
+}
+
+#sidebar > button:hover { width: calc(100% + 2dvw); }
+
+
+
+#home img {
+    aspect-ratio: 1 / 1;
+    width: 90%;
+    place-self: center
+}
+
+#home {
+    width: 100%;
+    place-self: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 40%;
+    background-color: var(--BUTTON-BACKGROUND);
+    border: none;
+    cursor: pointer;
+    transition: background-color .4s ease;
+    anchor-name: --home;
+}
+
+#home:hover { background-color: var(--BUTTON-HIGHLIGHT); }
+#home:active { background-color: var(--BUTTON-SELECTED); }
+[data-selected="true"] { background-color: var(--BUTTON-HIGHLIGHT) !important; }
+
+#sidebar-divider {
+    position: absolute;
+    border-bottom: 1px solid gray;
+    left: 0;
+    right: anchor(--sidebar right);
+    top: anchor(--home bottom);
+    height: 0.5dvh;
+    opacity: 0.5;
+}
+
+#new {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    place-self: center;
+    border-radius: 40%;
+    background-color: var(--BUTTON-BACKGROUND);
+    border: none;
+    cursor: pointer;
+    transition: background-color .4s ease;
+    anchor-name: --new;
+}
