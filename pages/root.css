@@ -10,7 +10,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 32px;
+    height: 2lh;
     width: 100%;
     background-color: var(--MAIN-BACKGROUND);
     -webkit-app-region: drag;
@@ -42,16 +42,15 @@ body {
 #navbar > #right > #close:hover { background-color: var(--CLOSE) !important; }
 
 #navbar > #left {
+    margin-left: 1dvw;
     display: grid;
     grid-template-columns: repeat(2, min-content);
     height: 100%;
-    gap: 10px;
-    margin-left: 5px;
     align-items: center;
 }
 
 #navbar > #left > img {
-    max-height: 20px;
+    max-height: 1.4lh;
     aspect-ratio: 88/20;
     user-select: none;
 }
@@ -60,4 +59,5 @@ body {
     text-wrap-mode: nowrap;
     user-select: none;
     color: white;
+    font-size: larger;
 }

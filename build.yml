@@ -1,0 +1,18 @@
+appId: "org.theadelaidegame.halls"
+productName: "Halls"
+linux:
+  target: ["AppImage", "rpm"]
+  # I set myself as the maintainer since I'm the one using Linux, not
+  # because I'm claiming to be the maintainer of the whole project. :)
+  maintainer: "jlturton7@gmail.com"
+  category: "Network"
+win:
+  target: "nsis"
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  runAfterFinish: true
+  shortcutName: "Halls"
+  

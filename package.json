@@ -1,15 +1,33 @@
 {
-  "name": "datcord-v2",
-  "version": "0.0.1",
-  "description": "",
+  "name": "halls",
+  "productName": "Halls",
+  "desktopName": "Halls",
+  "version": "0.0.6",
+  "description": "A chatroom & messaging service centered around the idea that each chat is a room, each user is a door, and so the collection is a hallway, or a Hall.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ./"
+    "start": "echo -e '\\033[H\\033[2J\\033[3J' && electron ./",
+    "dist:AppImage": "echo -e '\\033[H\\033[2J\\033[3J' && electron-builder --linux AppImage -c ./build.yml",
+    "dist:rpm": "echo -e '\\033[H\\033[2J\\033[3J' && electron-builder --linux rpm -c ./build.yml",
+    "dist:win": "echo -e '\\033[H\\033[2J\\033[3J' && electron-builder --win -c ./build.yml",
+    "dist": "echo -e '\\033[H\\033[2J\\033[3JSpecify a dist type:\n- dist:AppImage for majority of Linux Distributions\n- dist:rpm for Fedora Linux\n- dist:win for Windows'"
   },
   "keywords": [],
-  "author": "",
+  "contributors": [
+    {
+      "name": "Thomas Searle",
+      "email": "tomess@hotmail.com"
+    },
+    {
+      "name": "Josh Turton",
+      "email": "jlturton7@gmail.com",
+      "url": "https://theadelaidegame.org/about"
+    }
+  ],
+  "author": { "name": "The culmination of works by Thomas Searle and Josh Turton" },
   "license": "ISC",
-  "dependencies": {
-    "electron": "^45.1.0"
+  "devDependencies": {
+    "electron": "^45.1.0",
+    "electron-builder": "^26.18.0"
   }
 }
