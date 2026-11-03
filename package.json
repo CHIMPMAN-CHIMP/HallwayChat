@@ -5,6 +5,8 @@
   "version": "0.0.6",
   "description": "A chatroom & messaging service centered around the idea that each chat is a room, each user is a door, and so the collection is a hallway, or a Hall.",
   "main": "main.js",
+  "homepage": "https://github.com/CHIMPMAN-CHIMP/HallwayChat",
+  "repository": "https://github.com/CHIMPMAN-CHIMP/HallwayChat",
   "scripts": {
     "start": "echo -e '\\033[H\\033[2J\\033[3J' && electron ./",
     "dist:AppImage": "echo -e '\\033[H\\033[2J\\033[3J' && electron-builder --linux AppImage -c ./build.yml",
@@ -16,12 +18,13 @@
   "contributors": [
     {
       "name": "Thomas Searle",
-      "email": "tomess@hotmail.com"
+      "email": "tomess123@outlook.com",
+      "url": "https://github.com/CHIMPMAN-CHIMP"
     },
     {
       "name": "Josh Turton",
       "email": "jlturton7@gmail.com",
-      "url": "https://theadelaidegame.org/about"
+      "url": "https://github.com/thejtzone"
     }
   ],
   "author": { "name": "The culmination of works by Thomas Searle and Josh Turton" },
