@@ -10,7 +10,7 @@ body {
 #user-list, #consume-content {
     overflow-y: scroll;
     overflow-x: hidden;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 iframe {

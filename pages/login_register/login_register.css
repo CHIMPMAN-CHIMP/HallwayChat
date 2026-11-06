@@ -1,7 +1,7 @@
 div {
     position: fixed;
     top: 50%;
-    left: 25%;
+    left: 30%;
     translate: -50% -50%;
 
     display: grid;

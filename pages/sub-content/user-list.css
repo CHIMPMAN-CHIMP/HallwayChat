@@ -3,38 +3,59 @@ body {
 }
 
 #self-profile {
+    position:fixed;
+    height: 10%;
+    width: 95%;
+    bottom: 1%;
+    left: 50%;
+    translate: -50% 0;
+
     display: grid;
-    /* grid-template-columns: 0.10fr 0.9fr; */
     grid-template-columns: min-content .95fr;
     grid-template-rows: 0.85fr;
     place-content: center;
     gap:2%;
+
     background-color: rgb(50 50 50);
-    position:fixed;
-    height: 10%;
-    width: 95%;
     border-radius: 1rem;
-    bottom: 1%;
     border: 1px solid white;
 }
 
 #self-profile-pic {
-    /* position: absolute; */
-    top: 4%;
     background-color: rgb(131, 130, 130);
-    /* width:20%; */
-    /* height: 85%; */
     border-radius: 1rem;
     height: 100%;
+    max-height: 100%;
     aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+}
+
+#self-profile-pic > img {
+    overflow: hidden;
+    object-fit: contain;
+    aspect-ratio: 1;
+    max-height: 80%;
 }
 
 #self-profile-username-holder {
-    /* position: absolute; */
-    top: 4%;
     background-color: rgb(131, 130, 130);
-    /* width: 1fr; */
-    /* height: 85%; */
     border-radius: 1rem;
     height: 100%;
+}
+
+#groups {
+    display: grid;
+    grid-template-columns: .9fr;
+    grid-auto-rows: min-content;
+    gap: .3lh;
+    padding: 1dvh 1dvw;
+    justify-content: center;
+}
+
+.no-group {
+    font-size: xx-large;
+    text-align: center;
+    height: 100dvh;
+    align-content: center;
 }
