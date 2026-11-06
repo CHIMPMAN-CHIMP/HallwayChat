@@ -1,20 +1,16 @@
-#user-list {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 20%;
-    height: 93.2%;
-    padding: 0.8%;
-    border-radius:3rem;
+body {
+    display: grid;
+    grid-template-columns: 20% 76%;
+    grid-template-rows: 1fr;
+    height: 93.2dvh;
+    gap: 2%;
+    place-content: center;
 }
 
-#consume-content {
+#user-list, #consume-content {
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 76%;
-    height: 93.2%;
-    padding: 0.8%;
-    border-radius:3rem;
-    padding-left: none;
+    border-radius: 2rem;
 }
 
 iframe {
@@ -22,4 +18,5 @@ iframe {
     outline: none;
     width: 100%;
     height: 100%;
+    margin-top: 2dvh;
 }

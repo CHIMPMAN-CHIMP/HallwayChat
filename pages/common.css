@@ -6,6 +6,7 @@
 
     --BUTTON-BACKGROUND: #3a3a3a;
     --BUTTON-HIGHLIGHT: #4e4e4e;
+    --BUTTON-FOCUS: #5e5e5e;
     --BUTTON-SELECTED: var(--MAIN-FOREGROUND);
 }
 
@@ -31,7 +32,7 @@
 }
 
 /* * { font-family: "PixelLatin";} */
-* { font-family: "PixelTimesNewRoman";}
+* { font-family: "PixelTimesNewRoman"; color-scheme: dark; }
 
 body {
     width: 100dvw;

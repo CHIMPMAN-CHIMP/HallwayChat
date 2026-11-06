@@ -1,0 +1,49 @@
+div {
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    translate: -50% -50%;
+
+    display: grid;
+    grid-template-columns: .8fr;
+
+    border-radius: 3rem;
+    text-align: center;
+    place-content: center;
+    width: 30dvw;
+    height: 85dvh;
+
+    background-color: var(--MAIN-FOREGROUND);
+}
+
+div * { font-size: x-large; }
+h1 { font-size: 2.6rem; }
+a { font-size: large; }
+input { 
+    margin-bottom: 3dvh; 
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: .35rem;
+    background-color: var(--BUTTON-BACKGROUND);
+    transition: background-color 0.2s ease-in-out, width 0.2s ease-in-out, translate 0.2s ease-in-out;
+    width: 100%;
+    translate: 0 0;
+    padding: .15ch .4ch;
+}
+
+button {
+    margin-bottom: 2dvh; 
+    margin-top: 1lh;
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: .35rem;
+    background-color: var(--BUTTON-BACKGROUND);
+    transition: background-color 0.2s ease-in-out;
+}
+button:hover, input:hover { background-color: var(--BUTTON-HIGHLIGHT); }
+button:focus, input:focus { background-color: var(--BUTTON-FOCUS); width: 110%; translate: -5% 0; }
+
+a { color: #79d49f; transition: color 0.2s ease-in-out; }
+a:hover { color: #ccffe1; }
